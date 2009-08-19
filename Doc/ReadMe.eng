@@ -1,0 +1,72 @@
+                         HexEditor FAR plugin
+                             Version 1.2
+                    Copyright (C) 1999 Alex Pakhotin
+
+
+1. Foreword
+~~~~~~~~~~~
+Yes! It's a long-awaited hexadecimal editor for FAR!
+Now you can edit data in binary mode.
+
+
+2. Installation
+~~~~~~~~~~~~~~~
+It's as usual: copy the files from archive into subdirectory in the
+\Far\Plugins\ (for example, \Far\Plugins\Editor\HexEdit\) and restart FAR.
+
+I advise to create the macro to execute HexEditor by pressing F4.
+You can use macros from this package:
+  HexEd_X.reg - sets the hot-key "X" for HexEditor (but it's better you'll set
+                it by the hands because your HexEditor path may be another, or
+                the "X" key may be already occupied).
+  HexEd_F4.reg - HexEditor execution by pressing F4.
+
+
+3. Work
+~~~~~~~
+Execute HexEditor using standard plugin menu or by macro key.
+Use standard cursor movement keys to move;
+Tab - to toggle hexadecimal and char modes;
+F4  - to return to the text editor with data saving;
+F5  - to go to specified address;
+F7  - to search text or data;
+Shift-F7 - to continue search;
+F10,Esc  - to close HexEditor with confirmation.
+
+
+4. Technical details
+~~~~~~~~~~~~~~~~~~~~
+Data in the FAR text editor is stored as separate lines. So for binary editing
+it has to be converted into continuous block, and after editing - back into the
+lines. It's quite slow operation leading to delays when the lines number is big
+enough.
+
+If the data hasn't been changed in HexEditor the text in the editor isn't
+changed too. So don't worry when you use HexEditor simply to view editor data
+in the hexadecimal mode - it's non-destructive operation.
+
+Program is written in C++ and compiled with Microsoft Visual C++ 5.
+
+
+5. Disclaimer of damages
+~~~~~~~~~~~~~~~~~~~~~~~~
+This program works with data on low level, so it may be cases of data damage.
+
+THE AUTHOR IS NOT LIABLE TO YOU FOR ANY SPECIAL, CONSEQUENTIAL, INDIRECT OR
+SIMILAR DAMAGES, INCLUDING ANY LOST PROFITS OR LOST DATA ARISING OUT OF THE USE
+OR INABILITY TO USE THE SOFTWARE.
+
+If you found an error please report to the author by e-mail immediately.
+
+
+6. Thanks
+~~~~~~~~~
+Thanks a lot to Eugene Roshal, the author of FAR, for his really GREAT program
+and also for his help in writing this plugin.
+
+
+
+Alex Pakhotin, Omsk, Russia
+2:5004/16.99@FidoNet
+alex@apsofts.com
+www.apsofts.com

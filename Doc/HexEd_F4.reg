@@ -1,0 +1,5 @@
+REGEDIT4
+
+[HKEY_CURRENT_USER\Software\Far\KeyMacros\Editor\F4]
+"Sequence"="F11 x"
+"DisableOutput"=dword:00000001

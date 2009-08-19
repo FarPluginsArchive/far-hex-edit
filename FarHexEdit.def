@@ -1,0 +1,5 @@
+LIBRARY
+EXPORTS
+   GetPluginInfo=_GetPluginInfo@4
+   OpenPlugin=_OpenPlugin@8
+   SetStartupInfo=_SetStartupInfo@4

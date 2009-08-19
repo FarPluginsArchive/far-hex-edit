@@ -1,0 +1,86 @@
+.Language=English,English
+.PluginContents=HexEditor
+
+@Contents
+$^#HexEditor FAR plugin#
+$^#Version 1.2#
+$^#Copyright (C) 1999 Alex Pakhotin#
+
+ Yes! It's a long-awaited hexadecimal editor for FAR!
+ Now you can edit data in binary mode.
+
+   ~Keyboard reference~@Keys@
+
+   ~Technical notes~@Tech@
+
+   ~About the author~@Author@
+
+   ~Thanks~@Thanks@
+
+@Keys
+$^#HexEditor FAR plugin#
+$^#Version 1.2#
+$^#Copyright (C) 1999 Alex Pakhotin#
+  Cursor movements
+
+   #Left#            Character left
+   #Right#           Character right
+   #Up#              Line up
+   #Down#            Line down
+   #Ctrl-Left#       Byte left
+   #Ctrl-Right#      Byte right
+   #PgUp#            Page up
+   #PgDn#            Page down
+   #Home#            Start of line
+   #End#             End of line
+   #Ctrl-Home#       Start of file
+   #Ctrl-End#        End of file
+   #Ctrl-PgUp#       Start of screen
+   #Ctrl-PgDn#       End of screen
+
+  Other operations
+
+   #Tab#             Toggle hexadecimal and char modes
+   #F4#              Return to the text editor with data saving
+   #F5#              Go to specified address
+   #F7#              Search
+   #Shift-F7#        Continue search
+   #F10#,#Esc#         Close HexEditor with confirmation
+
+@Tech
+$^#HexEditor FAR plugin#
+$^#Version 1.2#
+$^#Copyright (C) 1999 Alex Pakhotin#
+ #Technical notes#
+
+ Data in the FAR text editor is stored as separate lines. So for binary editing
+it has to be converted into continuous block, and after editing - back into the
+lines. It's quite slow operation leading to delays when the lines number is big
+enough.
+
+ If the data hasn't been changed in HexEditor the text in the editor isn't
+changed too. So don't worry when you use HexEditor simply to view editor data
+in the hexadecimal mode - it's non-destructive operation.
+
+ Program is written in C++ and compiled with Microsoft Visual C++ 5.
+
+@Author
+$^#HexEditor FAR plugin#
+$^#Version 1.2#
+$^#Copyright (C) 1999 Alex Pakhotin#
+ #About the author#
+
+   Alex Pakhotin, Omsk, Russia
+
+   2:5004/16.99@@FidoNet
+   alex@@apsofts.com
+   http://www.apsofts.com
+
+@Thanks
+$^#HexEditor FAR plugin#
+$^#Version 1.2#
+$^#Copyright (C) 1999 Alex Pakhotin#
+ #Thanks#
+
+ Thanks a lot to Eugene Roshal, the author of FAR, for his really GREAT program and
+also for his help in writing this plugin.

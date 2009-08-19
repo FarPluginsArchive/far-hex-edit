@@ -1,0 +1,32 @@
+.Language=English,English
+
+"HexEditor"
+
+"Text  "
+
+"Converting data. Please wait..."
+
+"About"
+"HexEditor plugin"
+"Version 1.2"
+"Copyright (C) 1999 Alex Pakhotin"
+"Please send your bugreports to"
+"Press F1 once again to get plugin help"
+" OK "
+
+"Data has been modified. Perform changes?"
+"&Yes"
+"&No"
+"Cancel"
+
+"Go to address"
+"Goto  "
+
+"Search"
+"&Search for"
+"Search for &text"
+"Search for &hex"
+"&Case sensitive"
+
+"Searching for"
+"Could not find the string"
